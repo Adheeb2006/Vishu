@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishu Vela 2026 | Kanjirakkode</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+
+<!-- Favicon -->
+<link rel="icon" href="poster.jpg" type="image/png">
+ <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+  }
+
+  /* MOBILE FIRST */
+
+  .hero {
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url('poster.jpg') center/cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;   /* mobile first */
+    font-weight: bold;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .card {
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+
+  footer {
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* TABLET */
+  @media (min-width: 768px) {
+    .hero h1 {
+      font-size: 50px;
+    }
+
+    .hero h3 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+  }
+
+  /* DESKTOP */
+  @media (min-width: 992px) {
+    .hero h1 {
+      font-size: 65px;
+    }
+
+    .section {
+      padding: 70px 20px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div>
+    <h1>Vishu Vela 2026</h1>
+    <h3>Kanjirakkode</h3>
+    <p>April 15, 2026 | 7:00 PM</p>
+  </div>
+</section>
+
+<section class="section text-center">
+  <div class="container">
+    <h2>About the Event</h2>
+    <p class="mt-3">
+      A Vishu season returns with golden memories and joyful celebrations.
+      On this special day, filled with tradition and cultural spirit,
+      the youth of Kanjirakkode come together to celebrate unity and festivity.
+    </p>
+  </div>
+</section>
+
+<section class="section bg-light text-center">
+  <div class="container">
+    <h2>Event Details</h2>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card p-3 shadow">
+          <h5>Date</h5>
+          <p>April 15, 2026</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 shadow">
+          <h5>Time</h5>
+          <p>7:00 PM</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 shadow">
+          <h5>Location</h5>
+          <p>Kanjirakkode</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section text-center">
+  <div class="container">
+    <h2>Program Schedule</h2>
+
+    <ul class="list-group mt-4">
+      <li class="list-group-item">
+        🎉 7:00 PM – Vaikings Thambolam Procession
+      </li>
+      <li class="list-group-item">
+        🔥 Performances by D.K Boys Gorilla & Venemous Popper
+      </li>
+      <li class="list-group-item">
+        🕺 9:30 PM – Veeranatyam by Kodumbu Shivadhara
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section text-center" style="background:#f8f9fa;">
+  <div class="container">
+
+    <h2 class="mb-3">💰 Fund Contribution</h2>
+
+    <p class="mb-3 px-2">
+      Scan or pay directly using UPI apps 🙏
+    </p>
+
+    <div class="card p-3 shadow mx-auto" style="max-width:320px;">
+      
+      <!-- QR -->
+      <img 
+        src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=upi://pay?pa=rathulrajcr@okhdfcbank&pn=Rathul%20Raj_CR&cu=INR" 
+        class="img-fluid mb-3"
+      >
+
+      <!-- NAME -->
+      <h6 class="mb-1">Rathul Raj_CR</h6>
+
+      <!-- UPI -->
+      <p id="upiText" class="small mb-2 text-break">
+        rathulrajcr@okhdfcbank
+      </p>
+
+      <!-- COPY BUTTON -->
+      <button onclick="copyUPI()" class="btn btn-outline-secondary btn-sm mb-3">
+        Copy UPI ID
+      </button>
+
+      <!-- PAY BUTTONS -->
+      <div class="d-grid gap-2">
+
+        <!-- Generic UPI -->
+        <a href="upi://pay?pa=rathulrajcr@okhdfcbank&pn=Rathul%20Raj_CR&cu=INR" 
+           class="btn btn-success">
+          Pay Now (UPI)
+        </a>
+
+        <!-- Google Pay -->
+        <a href="tez://upi/pay?pa=rathulrajcr@okhdfcbank&pn=Rathul%20Raj_CR&cu=INR" 
+           class="btn btn-primary">
+          Pay with GPay
+        </a>
+
+        <!-- PhonePe -->
+        <a href="phonepe://pay?pa=rathulrajcr@okhdfcbank&pn=Rathul%20Raj_CR&cu=INR" 
+           class="btn btn-dark">
+          Pay with PhonePe
+        </a>
+
+        <!-- Paytm -->
+        <a href="paytmmp://pay?pa=rathulrajcr@okhdfcbank&pn=Rathul%20Raj_CR&cu=INR" 
+           class="btn btn-info text-white">
+          Pay with Paytm
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section text-center">
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="mt-3">For more information:</p>
+    <h4>📞 9447685302</h4>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Vishu Vela | Kanjirakkode</p>
+</footer>
+<script>
+function copyUPI() {
+  const text = document.getElementById("upiText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("UPI ID copied!");
+}
+</script>
+</body>
+</html>
